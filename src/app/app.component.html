@@ -1,2 +1,5 @@
 <h1>Voitures</h1>
+<input type="text" [(ngModel)]="nomVoiture"> {{nomVoiture}}
+<button [disabled]="isDisabled" (click)="afficherAlert()" class='btn-success'> Ajouter une voiture </button>
+<span> {{addText}} </span>
 <app-voiture></app-voiture>
